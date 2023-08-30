@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #007AFF;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .btn {
+    margin: 10px;
+  }
+  
+  .team-list {
+    margin: 20px;
+  }
+  
+  .team {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .scoring-box {
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  

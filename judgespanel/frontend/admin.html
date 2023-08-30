@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="admincss.css">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Admin Panel</h1>
+    
+    <!-- Add Team Form -->
+    <form id="add-team-form">
+      <div class="form-group">
+        <label for="team-name">Team Name:</label>
+        <input type="text" class="form-control" id="team-name" required>
+      </div>
+      <div class="form-group">
+        <label for="category-select">Category:</label>
+        <select class="form-control" id="category-select" required>
+          <option value="Jr. Champs">Jr. Cadet</option>
+          <option value="Sr. Champs">Jr. Captain</option>
+          <option value="Master Champs">Jr. Colonel</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Team</button>
+
+
+    </form>
+    
+    <!-- Teams List -->
+    <h2 class="mt-4">Teams List</h2>
+    <ul id="teams-list" class="list-group mb-4">
+      <!-- Teams will be dynamically added here -->
+    </ul>
+
+    <!-- View Results Buttons -->
+    <h2>View Results</h2>
+    <button class="btn btn-secondary view-results-button" data-category="Jr. Champs">View Jr. Cadet Results</button>
+    <button class="btn btn-secondary view-results-button" data-category="Sr. Champs">View Jr. Captain Results</button>
+    <button class="btn btn-secondary view-results-button" data-category="Master Champs">View Jr. Colonel Results</button>
+    <button id="logout-button" class="btn btn-danger mt-4">Log Out</button>
+
+    <!-- Results Container -->
+    <div id="results-container" class="mt-4">
+      <!-- Results will be dynamically displayed here -->
+    </div>
+  </div>
+
+  <script src="adminclient.js"></script>
+  <script src="/backend/adminserver.js/"></script>
+
+</body>
+</html>
